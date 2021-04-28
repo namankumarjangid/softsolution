@@ -1,0 +1,146 @@
+.body{
+  /* height: 100vh; */
+  background: none;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.profile-card{
+  width: 400px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.card-header{
+  background: #f2f2f2;
+  padding: 60px 40px;
+}
+
+.pic{
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, #3498db, #f03e3e);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+  25%{
+    background-position: left bottom;
+  }
+  50%{
+    background-position: right bottom;
+  }
+  75%{
+    background-position: right top;
+  }
+  100%{
+    background-position: left top;
+  }
+}
+
+.pic img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name{
+  color: #2c3a47;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.desc{
+  font-size: 18px;
+  color: #3498db;
+}
+
+.sm{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.sm a{
+  text-decoration: none;
+  color: #3498db;
+  width: 56px;
+  font-size: 22px;
+  transition: .3s linear;
+}
+
+.sm a:hover{
+  color: #2c3a47;
+}
+
+@media (max-width: 768px) {
+  .profile-card{
+    padding: 10px;
+  }
+  footer p{
+    margin-top: 1.5rem;
+    padding: 0.3rem 0;
+  }
+}
+
+
+.smm{
+  margin: 1.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+}
+
+.smm a{
+  display: inline-block;
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #3498db;
+  margin: 0 14px;
+  transition: .4s linear;
+  position: relative;
+}
+
+.smm a::before, .smm a::after{
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: .4s linear;
+}
+
+.smm a:hover{
+  transform: scale(.8);
+}
+
+.smm a:hover::before{
+  border-left: 4px solid;
+  border-right: 4px solid;
+  transform: skewX(20deg);
+}
+
+.smm a:hover::after{
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  transform: skewY(-20deg);
+}
