@@ -138,7 +138,7 @@ const Contact = () => {
               </div>
 
               <div className="col-12">
-                <button className="btn btn-outline-primary" type="submit">
+                <button className="btn btn-get-started" type="submit">
                   Submit form
                 </button>
               </div>

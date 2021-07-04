@@ -9,8 +9,8 @@ const About = () => {
       <Commom
         name="Welcome to About page"
         imgsrc={web}
-        visit="/ourteam"
-        btname="Our Team"
+        visit={window.open("https://namankumarjangid.github.io/namanjangid/")}
+        btname="Portfolio"
       />
     </>
   );

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <footer className="teamfoo w-100 bg-light text-center">
-        <p>©2021 SoftSolution. All Rights Reserved | Terms and Conditions</p>
+        <p>©2021 SoftSolution. All Rights Reserved</p>
       </footer>
     </>
   );
